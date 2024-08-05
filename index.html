@@ -20,7 +20,7 @@
         $('#send_btn').on('click', function(){
             $.ajax(
                 {
-                    url: "https://jolly-voice-31926.pktriot.net/",
+                    url: "https://jolly-voice-31926.pktriot.net/scans_tracker/index.php",
                     method: "post",
                     data: {
                         data_request:1  
@@ -36,26 +36,3 @@
     </script>
 </body>
 </html>
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>AJAX Example</title>
-</head>
-<body>
-    <button onclick="sendAjaxRequest()">Send AJAX Request</button>
-    <div id="result"></div>
-
-    <script>
-    function sendAjaxRequest() {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("result").innerHTML = this.responseText;
-            }
-        };
-        xhr.open("GET", "https://jolly-voice-31926.pktriot.net/index.php", true);
-        xhr.send();
-    }
-    </script>
-</body>
-</html> -->
